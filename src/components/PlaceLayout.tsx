@@ -7,11 +7,11 @@ interface PlaceLayoutProps {
   }
   
   function PlaceLayout(props: PlaceLayoutProps): JSX.Element {
-    const imgHeight = 100
+    const imgWidth = 300
     return (
       <section>
         <p>
-            <img src={props.imageURL} height={imgHeight} alt=""/>
+            <img src={props.imageURL} width={imgWidth} alt=""/>
         </p>
         <h2>{props.title}</h2>
         <p>

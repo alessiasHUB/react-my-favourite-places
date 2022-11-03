@@ -2,8 +2,8 @@ function PageFooter(): JSX.Element {
     return (
       <footer>
         <br/>
-        <p>_____________________________</p>
-        <h4>not a copyright but whatever</h4>
+        <p>________________________________________________________________</p>
+        <h4>Apparently all beautiful places have names that start with C</h4>
       </footer>
     );
   }
