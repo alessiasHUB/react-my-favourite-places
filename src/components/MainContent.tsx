@@ -9,7 +9,17 @@ function MainContent(): JSX.Element {
 }
 
 const imgWidth = 300;
-const places = [
+
+interface Place {
+  id: number;
+  title: string;
+  location: { place: string; country: string };
+  link: string;
+  imageURL: string;
+  body: string;
+}
+
+const places : Place[] = [
   {
     id: 1,
     imageURL:
@@ -48,7 +58,11 @@ const places = [
   },
 ];
 
-const PlaceMapItem = (props: any) => {
+interface PlaceMapItemProps {
+  place: Place;
+}
+
+const PlaceMapItem = (props:PlaceMapItemProps) => {
   return (
     <section>
       <p>
