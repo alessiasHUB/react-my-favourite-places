@@ -8,7 +8,9 @@ function MainContent(): JSX.Element {
   );
 }
 
-const imgWidth = 300;
+
+// making reusable place elements
+const imgWidth = 400;
 
 interface Place {
   id: number;
