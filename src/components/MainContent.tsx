@@ -48,7 +48,7 @@ const places = [
   },
 ];
 
-const PlaceMapItem = (props:any) => {
+const PlaceMapItem = (props: any) => {
   return (
     <section>
       <p>
