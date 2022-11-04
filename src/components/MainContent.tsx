@@ -8,7 +8,6 @@ function MainContent(): JSX.Element {
   );
 }
 
-
 // making reusable place elements
 const imgWidth = 400;
 
@@ -21,7 +20,7 @@ interface Place {
   body: string;
 }
 
-const places : Place[] = [
+const places: Place[] = [
   {
     id: 1,
     imageURL:
@@ -64,7 +63,7 @@ interface PlaceMapItemProps {
   place: Place;
 }
 
-const PlaceMapItem = (props:PlaceMapItemProps) => {
+const PlaceMapItem = (props: PlaceMapItemProps) => {
   return (
     <section>
       <p>
@@ -73,7 +72,8 @@ const PlaceMapItem = (props:PlaceMapItemProps) => {
       <h2>{props.place.title}</h2>
       <p>
         <i>
-          Location: {props.place.location.place}, {props.place.location.country}
+          Location: {props.place.location.place}, {props.place.location.country}{" "}
+          {}
         </i>
         <i>
           (<a href={props.place.link}>map-link</a>)
