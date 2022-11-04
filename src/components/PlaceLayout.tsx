@@ -1,3 +1,5 @@
+// this page is not in used currently
+
 interface PlaceLayoutProps {
   title: string;
   location: { place: string; country: string };
